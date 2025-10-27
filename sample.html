@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon and sun</title>
+    <style>
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="sun" src="sun.jpg" style="width:300px;height:300px;">
+        <img id="moon" src="moon.jpg" style="width:300px;height:300px; margin-left: 400px;">
+    </div>
+    <div>
+        <center><button id="dayBtn" onclick="a()" class="btn btn-warning btn-custom">DayMode</button>
+        <button id="nightBtn" onclick="b()" class="btn btn-dark btn-custom">NightMode</button></center>
+    </div>
+    <script>
+        function a(){
+document.body.style.backgroundImage = "url('ll.jpg')";
+
+
+        }
+         function b(){
+document.body.style.backgroundImage = "url('aa.png')";
+
+
+        }
+
+    </script>
+</body>
+</html>
